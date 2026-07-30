@@ -23,7 +23,7 @@ RuntimeError: Printer responded with something unexpected   (on M220)
 RuntimeError: There are no matches for M27 P. That is weird.   (on M27)
 ```
 
-## Red herrings we ruled out along the way
+## Red herrings I ruled out along the way
 
 - resetting the SD card in the printer (removing/reinserting, full power cycle) — no effect
 - reconnecting the printer from Prusa Connect (unlink/link) — no effect
