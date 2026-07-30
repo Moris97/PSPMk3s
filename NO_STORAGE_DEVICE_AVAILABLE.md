@@ -1,6 +1,6 @@
 ## **I wanted to describe a situation I encountered and how I resolved it**
 
-![no storage device](link)
+![no storage device]([link](https://github.com/Moris97/PSPMk3s/blob/master/image.png))
 
 # Multi-instance PrusaLink on one Raspberry Pi + "No storage device available" error in Prusa Connect/EasyPrint
 
