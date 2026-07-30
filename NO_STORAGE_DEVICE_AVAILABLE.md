@@ -48,9 +48,12 @@ Confirmed by someone else hitting the same symptom (Docker/K3S setup, but identi
 ## Fix
 
 1. Stop the PrusaLink service for that printer.
-2. Move the contents of your custom gcode directory into a folder with **exactly the default name** `PrusaLink gcodes` (with the space), inside that instance's working/data directory.
-3. Remove (or comment out) the `directory = ...` line under `[printer]` in the `.ini` file so PrusaLink falls back to the default.
-4. Start the service again.
+```
+sudo systemctl stop prusalink
+```
+3. Move the contents of your custom gcode directory into a folder with **exactly the default name** `PrusaLink gcodes` (with the space), inside that instance's working/data directory.
+4. Remove (or comment out) the `directory = ...` line under `[printer]` in the `.ini` file so PrusaLink falls back to the default.
+5. Start the service again.
 
 With multi-instance setups (several printers on one Pi), separation still works correctly — since each instance has its own `data_dir`/working directory, the default relative path `./PrusaLink gcodes` still points to a separate folder per printer. You don't need a custom path for that — a separate working directory per instance is enough.
 
